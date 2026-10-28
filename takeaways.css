@@ -1,0 +1,79 @@
+/* Section 7: grouped copy at left; a shared image follows the selected benefit. */
+#main .takeaways.takeaways-interactive .section-top{margin-bottom:18px;padding-inline:50px 0}
+#main .takeaways.takeaways-interactive .section-top>.eyebrow:before{display:none}
+#main .takeaways.takeaways-interactive .section-heading{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:start;padding:0;margin-bottom:34px}
+#main .takeaways.takeaways-interactive .section-heading h2{grid-column:1;max-width:560px;margin:0;padding-left:50px;font-size:clamp(30px,2.6vw,38px);font-weight:500;line-height:1.4;letter-spacing:-.6px;text-wrap:balance}
+#main .takeaways.takeaways-interactive .takeaway-introduction{grid-column:2;padding-top:3px}
+#main .takeaways.takeaways-interactive .takeaway-introduction>p{max-width:490px;margin:0;font-size:16px;line-height:1.85;color:var(--muted)}
+#main .takeaways.takeaways-interactive .takeaway-explore-hint{display:flex;margin-top:13px;color:var(--muted);font-size:12px;letter-spacing:.2px}
+#main .takeaways.takeaways-interactive .takeaway-hint-touch{display:none}
+#main .takeaways.takeaways-interactive .takeaway-content{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:start}
+#main .takeaways.takeaways-interactive .takeaway-list{display:block;min-width:0;padding:0;border-top:1px solid var(--border)}
+#main .takeaways.takeaways-interactive .takeaway-item,
+#main .takeaways.takeaways-interactive .takeaway-item:last-child{position:relative;isolation:isolate;display:grid;grid-template-columns:30px minmax(0,1fr);gap:9px 20px;align-items:start;min-height:0;padding:24px 0 25px;border-bottom:1px solid var(--border);overflow:hidden;grid-column:auto;background:transparent;transition:background .3s}
+#main .takeaways.takeaways-interactive .takeaway-number{position:relative;z-index:1;font-size:13px;line-height:1.8;letter-spacing:1px;color:#a79bc9;padding-top:5px;font-variant-numeric:tabular-nums;transition:color .3s}
+#main .takeaways.takeaways-interactive .takeaway-item h3{position:static;z-index:2;max-width:570px;margin:0;font-size:24px;font-weight:500;line-height:1.5;letter-spacing:-.3px}
+#main .takeaways.takeaways-interactive .takeaway-trigger{display:block;text-align:left;font:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;padding:0;border:0;background:none;border-radius:0;cursor:pointer}
+#main .takeaways.takeaways-interactive .takeaway-trigger:after{content:'';position:absolute;inset:0;z-index:3}
+#main .takeaways.takeaways-interactive .takeaway-trigger:focus-visible{outline:0}
+#main .takeaways.takeaways-interactive .takeaway-item:has(.takeaway-trigger:focus-visible){outline:2px solid var(--lavender);outline-offset:-3px}
+#main .takeaways.takeaways-interactive .takeaway-item p,
+#main .takeaways.takeaways-interactive .takeaway-item:last-child p{position:relative;z-index:1;grid-column:2;max-width:570px;margin:0;font-size:16px;line-height:1.8;color:var(--muted);transition:color .3s}
+#main .takeaways.takeaways-interactive .takeaway-backdrop{display:none;position:absolute;z-index:0;inset:0;pointer-events:none;opacity:0;transform:translateX(12px) scale(1.02);transition:opacity .45s ease,transform .6s cubic-bezier(.2,.7,.2,1);background:#111b35}
+#main .takeaways.takeaways-interactive .takeaway-backdrop img{position:absolute;right:0;top:0;width:75%;height:100%;object-fit:cover;object-position:70% 52%;opacity:.82;mask-image:linear-gradient(90deg,transparent 0,#000 35%,#000 94%,transparent);filter:saturate(.7)}
+#main .takeaways.takeaways-interactive .takeaway-backdrop:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#070d1e 0,#070d1ef0 32%,#070d1eae 57%,#070d1e45 100%)}
+#main .takeaways.takeaways-interactive .takeaway-item.is-active .takeaway-backdrop{opacity:1;transform:none}
+#main .takeaways.takeaways-interactive .takeaway-item.is-active p{color:#e2e6f5}
+#main .takeaways.takeaways-interactive .takeaway-item.is-active .takeaway-number{color:var(--lavender)}
+#main .takeaways.takeaways-interactive .takeaway-item.is-active{background:linear-gradient(90deg,#c5b8f407,transparent 85%)}
+#main .takeaways.takeaways-interactive .takeaway-preview{position:sticky;top:110px;align-self:start;height:clamp(400px,calc(100svh - 320px),540px);margin:0;min-width:0}
+#main .takeaways.takeaways-interactive .takeaway-preview-art{position:absolute;inset:0 0 150px;isolation:isolate;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(180deg,transparent,#000 10%,#000 82%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(180deg,transparent,#000 10%,#000 82%,transparent);-webkit-mask-composite:source-in;mask-composite:intersect}
+#main .takeaways.takeaways-interactive .takeaway-preview-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;opacity:0;transform:scale(1.035);filter:saturate(.8);transition:opacity .5s ease,transform .7s ease;pointer-events:none}
+#main .takeaways.takeaways-interactive .takeaway-preview-art img.is-active{opacity:1;transform:none}
+#main .takeaways.takeaways-interactive .takeaway-preview figcaption{position:absolute;left:26px;right:20px;bottom:0}
+#main .takeaways.takeaways-interactive .takeaway-preview-index{font-size:11px;letter-spacing:2px;color:var(--lavender)}
+#main .takeaways.takeaways-interactive .takeaway-preview-title{font-size:22px;line-height:1.5;color:var(--text);letter-spacing:-.3px;margin-top:11px;max-width:380px}
+#main .takeaways.takeaways-interactive .takeaway-preview-meta{display:block;font-size:9px;line-height:1.8;letter-spacing:1.4px;color:var(--muted);margin-top:15px}
+@media(max-width:1000px){
+  #main .takeaways.takeaways-interactive .section-top{padding-inline:44px 0}
+  #main .takeaways.takeaways-interactive .section-heading{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:32px;padding:0}
+  #main .takeaways.takeaways-interactive .section-heading h2{font-size:32px}
+  #main .takeaways.takeaways-interactive .section-heading h2{padding-left:44px}
+  #main .takeaways.takeaways-interactive .takeaway-introduction>p{font-size:15px}
+  #main .takeaways.takeaways-interactive .takeaway-content{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:32px}
+  #main .takeaways.takeaways-interactive .takeaway-item,
+  #main .takeaways.takeaways-interactive .takeaway-item:last-child{grid-template-columns:28px minmax(0,1fr);gap:9px 16px;padding:23px 0}
+  #main .takeaways.takeaways-interactive .takeaway-item h3{font-size:23px}
+  #main .takeaways.takeaways-interactive .takeaway-item p{font-size:15px}
+  #main .takeaways.takeaways-interactive .takeaway-preview{top:100px;height:440px}
+  #main .takeaways.takeaways-interactive .takeaway-preview-title{font-size:20px}
+  #main .takeaways.takeaways-interactive .takeaway-preview figcaption{left:12px;right:8px}
+}
+@media(hover:none),(pointer:coarse){
+  #main .takeaways.takeaways-interactive .takeaway-hint-pointer{display:none}
+  #main .takeaways.takeaways-interactive .takeaway-hint-touch{display:inline}
+}
+@media(max-width:720px){
+  #main .takeaways.takeaways-interactive .section-top{padding-inline:4px;margin-bottom:15px}
+  #main .takeaways.takeaways-interactive .section-heading{display:block;padding-inline:4px;margin-bottom:24px}
+  #main .takeaways.takeaways-interactive .section-heading h2{padding:0;font-size:29px;line-height:1.45;letter-spacing:-.5px;max-width:430px}
+  #main .takeaways.takeaways-interactive .takeaway-introduction{margin-top:16px;padding:0}
+  #main .takeaways.takeaways-interactive .takeaway-explore-hint{margin-top:13px;font-size:12px}
+  #main .takeaways.takeaways-interactive .takeaway-content{display:block}
+  #main .takeaways.takeaways-interactive .takeaway-preview{display:none}
+  #main .takeaways.takeaways-interactive .takeaway-item,
+  #main .takeaways.takeaways-interactive .takeaway-item:last-child{grid-template-columns:26px minmax(0,1fr);gap:12px 14px;min-height:0;padding:27px 4px 29px}
+  #main .takeaways.takeaways-interactive .takeaway-item h3{font-size:23px;line-height:1.55;max-width:none}
+  #main .takeaways.takeaways-interactive .takeaway-item p,
+  #main .takeaways.takeaways-interactive .takeaway-item:last-child p{grid-column:2;margin:0;font-size:15px;line-height:1.85;max-width:none}
+  #main .takeaways.takeaways-interactive .takeaway-number{font-size:11px;padding-top:6px}
+  #main .takeaways.takeaways-interactive .takeaway-backdrop{display:block}
+  #main .takeaways.takeaways-interactive .takeaway-backdrop img{width:100%;object-position:70% center;opacity:.68}
+  #main .takeaways.takeaways-interactive .takeaway-backdrop:after{background:linear-gradient(90deg,#070d1ef5,#070d1eb8 55%,#070d1e75)}
+}
+@media(prefers-reduced-motion:reduce){
+  #main .takeaways.takeaways-interactive .takeaway-backdrop,
+  #main .takeaways.takeaways-interactive .takeaway-preview-art img,
+  #main .takeaways.takeaways-interactive .takeaway-item p,
+  #main .takeaways.takeaways-interactive .takeaway-number{transition:none;transform:none}
+}

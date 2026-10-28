@@ -1,0 +1,74 @@
+/* Type treatment from v2_source/exports/KV_Hero_Motion_v2.html.
+   Keep the approved centered layout, responsive sizing and fade-only entrance. */
+@font-face {
+  font-family: 'OutfitNum';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('assets/outfit-latin-wght-normal.woff2') format('woff2');
+}
+
+.hero-wordmark {
+  font-family: Jakarta, Arial, sans-serif;
+}
+.hero-wordmark-pretitle {
+  font-weight: 600;
+  letter-spacing: .42em;
+  color: #e9d5ff;
+  text-shadow: 0 0 .63em rgba(155,77,255,.85);
+}
+.hero-wordmark-ma {
+  font-weight: 800;
+  letter-spacing: -.03em;
+  color: #fff;
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  text-shadow: 0 0 .21em rgba(155,77,255,.65), 0 0 .48em rgba(36,91,255,.55);
+}
+.hero-wordmark-ma-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.13em;
+  text-shadow: none;
+}
+.hero-wordmark-ma-art > svg {
+  display: block;
+  width: min(100%, 2.48em);
+  height: auto;
+  flex: none;
+  overflow: visible;
+}
+.hero-wordmark-region {
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -.015em;
+  background: linear-gradient(90deg,#fff 0,#f3e8ff 48%,#93c5fd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 .326em rgba(155,77,255,.7));
+}
+.hero-wordmark-year {
+  font-family: OutfitNum, Jakarta, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: -.017em;
+  color: rgba(233,213,255,.1);
+  -webkit-text-stroke: .0186em #e9d5ff;
+  filter: drop-shadow(0 0 .136em rgba(155,77,255,.85)) drop-shadow(0 0 .288em rgba(36,91,255,.6));
+}
+
+@media (forced-colors: active) {
+  .hero-wordmark-pretitle,
+  .hero-wordmark-ma,
+  .hero-wordmark-region,
+  .hero-wordmark-year {
+    color: CanvasText;
+    -webkit-text-fill-color: currentColor;
+    -webkit-text-stroke: 0;
+    background: none;
+    filter: none;
+    text-shadow: none;
+  }
+}

@@ -1,0 +1,436 @@
+/* NEXT Forum layout study. Scoped below the approved hero; VMAA colors stay intact. */
+#main .content-section{padding-block:clamp(76px,8vw,120px)}
+#main .content-section>.wrap{width:calc(100% - 96px);max-width:1200px}
+#main .content-section h2{font-size:clamp(34px,3.8vw,54px);font-weight:650;line-height:1.2;letter-spacing:-1.9px;text-wrap:balance}
+#main .content-section .section-top{border:0;padding:0;margin-bottom:32px;gap:24px}
+#main .content-section .section-top .eyebrow{font-size:10px;letter-spacing:1.8px}
+#main .content-section .section-top>.micro{font-size:9px;letter-spacing:1.4px}
+#main .content-section .section-heading{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:64px;align-items:end;margin-bottom:52px}
+#main .content-section .section-heading>p{max-width:480px;padding:0;font-size:15px;line-height:1.9}
+#main .content-section .text-link{font-size:13px}
+
+/* A clear statement of scale, followed by the real registration status. */
+#main .overview .overview-scene{grid-template-columns:.8fr 1.2fr;gap:64px;min-height:0;padding:20px 0 0;border:0;overflow:visible;align-items:center}
+#main .overview .delegate-number{min-width:0;padding-right:48px;border-right:1px solid var(--border)}
+#main .overview .delegate-number>span{font-size:clamp(120px,13.6vw,196px);font-weight:500;letter-spacing:-11px;line-height:1.02}
+#main .overview .delegate-number .plus{font-size:.52em;letter-spacing:-4px;vertical-align:24%;margin-left:6px}
+#main .overview .delegate-number h2{font-size:19px;letter-spacing:5px;font-weight:500;margin-top:16px}
+#main .overview .delegate-number p{font-size:14px;line-height:1.9;margin-top:24px}
+#main .overview .overview-copy{min-width:0;padding:0}
+#main .overview .overview-copy>p{font-size:clamp(21px,2.1vw,29px);line-height:1.7;letter-spacing:-.5px;max-width:650px;color:var(--text)}
+#main .overview .inline-actions{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px}
+#main .overview .inline-actions .button{min-height:52px;min-width:180px;padding:15px 24px;font-size:13px;border-radius:5px}
+#main .overview .countdown-bar{margin-top:40px;padding:24px 0;gap:24px;display:flex;flex-wrap:wrap;border-block:1px solid var(--border)}
+#main .overview .countdown-heading{gap:14px;min-width:260px}
+#main .overview .countdown-heading .micro{font-size:10px;letter-spacing:1.1px}
+#main .overview .countdown-heading p{font-size:13px;margin-top:6px}
+#main .overview .countdown-pending{min-height:44px}
+#main .overview .countdown-pending .small-tag{font-size:9px;padding:9px 12px}
+#main .overview .calendar-link{font-size:12px;min-height:44px;padding-left:24px;gap:16px;flex:none}
+
+/* Portraits and names lead; the complete draft profiles remain on the page. */
+#main .speakers .section-heading{display:block;max-width:880px;margin-bottom:34px}
+#main .speakers .section-heading h2{max-width:780px}
+#main .speakers .section-heading>p{max-width:790px;margin-top:24px;font-size:15px}
+#main .speakers .speaker-draft-notice{padding:18px 0;gap:22px;margin-bottom:36px;align-items:center}
+#main .speakers .speaker-draft-notice p{font-size:12px;line-height:1.8;max-width:740px}
+#main .speakers .speaker-draft-notice .small-tag{font-size:9px;white-space:nowrap}
+#main .speakers .speaker-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:stretch}
+#main .speakers .speaker-card{display:flex;flex-direction:column;border-radius:16px;padding:0;transform:none;transition:border-color .25s,box-shadow .25s}
+#main .speakers .speaker-card:hover{border-color:#b6a5ed70;box-shadow:0 12px 34px #03081730}
+#main .speakers .speaker-portrait{aspect-ratio:1.18/1;height:auto;min-height:0;border-right:0;border-bottom:1px solid var(--border);align-items:flex-end}
+#main .speakers .speaker-portrait img{width:100%;height:96%;max-width:94%;object-fit:contain;object-position:center bottom;filter:none}
+#main .speakers .speaker-portrait.framed img{height:90%;max-width:86%}
+#main .speakers .speaker-copy{padding:26px 27px 24px;flex:1;display:flex;flex-direction:column}
+#main .speakers .speaker-copy:before{display:none}
+#main .speakers .speaker-card h3{font-size:24px;font-weight:650;line-height:1.35;letter-spacing:-.6px;margin-bottom:9px}
+#main .speakers .speaker-title{font-size:13px;line-height:1.8;font-weight:500}
+#main .speakers .speaker-organization{font-size:13px;line-height:1.8;min-height:0;margin-top:0}
+#main .speakers .speaker-role{font-size:10px;font-weight:500;letter-spacing:.15px;line-height:1.7;margin:16px 0 0}
+#main .speakers .speaker-bio{display:block;overflow:visible;font-size:13px;line-height:1.85;margin:14px 0 24px}
+#main .speakers .speaker-card button{font-size:12px;min-height:44px;margin-top:auto;padding-top:14px}
+
+/* Four editorial panels, using the case-study rhythm of the reference. */
+#main .topics .section-heading{display:block;max-width:840px}
+#main .topics .section-heading h2{max-width:840px}
+#main .topics .topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 56px;border:0;background:none}
+#main .topics .topic-card{display:flex;flex-direction:column;min-height:0;padding:32px 0 28px;background:transparent;border:0;border-top:1px solid var(--border);border-radius:0;overflow:visible}
+#main .topics .topic-card:hover{background:transparent}
+#main .topics .topic-number{position:static;display:block;font-size:44px;font-weight:500;letter-spacing:-3px;line-height:1;color:var(--lavender);margin-bottom:26px}
+#main .topics .topic-card>.micro{margin:0;font-size:9px;line-height:1.8;letter-spacing:1.4px}
+#main .topics .topic-card h3{font-size:27px;font-weight:550;line-height:1.45;letter-spacing:-.65px;margin:14px 0 0;max-width:540px}
+#main .topics .topic-card p{font-size:14px;line-height:1.9;max-width:540px;margin:18px 0 26px}
+#main .topics .card-foot{margin-top:auto;padding-top:16px;font-size:12px;align-items:center}
+
+/* Unboxed, full-width schedule with a strong time/content division. */
+#main .agenda>.wrap{max-width:1120px}
+#main .agenda .agenda-intro{display:flex;align-items:flex-end;gap:48px;margin-bottom:42px}
+#main .agenda .agenda-intro h2{margin-top:24px}
+#main .agenda .agenda-date{margin:0;gap:16px;flex:none}
+#main .agenda .agenda-date strong{font-size:72px}
+#main .agenda .agenda-date span{font-size:11px;letter-spacing:.6px;line-height:1.9}
+#main .agenda .agenda-main{border:0;padding:0;border-radius:0;background:none;box-shadow:none}
+#main .agenda .agenda-toolbar{margin-bottom:24px}
+#main .agenda .agenda-toolbar .small-tag{font-size:9px;padding:7px 10px}
+#main .agenda .calendar-text{font-size:12px}
+#main .agenda .agenda-filters{display:flex;gap:32px;padding:0;background:none;border:0;border-bottom:1px solid var(--border);border-radius:0;margin-bottom:30px}
+#main .agenda .agenda-filters button{border-radius:0;padding:12px 0 16px;background:none;border:0;border-bottom:2px solid transparent;min-height:48px;font-size:13px;color:var(--muted);margin-bottom:-1px}
+#main .agenda .agenda-filters button.active{color:var(--lavender);background:none;border-color:var(--lavender)}
+#main .agenda .agenda-filters button:hover{background:none;color:var(--text)}
+#main .agenda .agenda-column-headings{grid-template-columns:190px minmax(0,1fr);gap:0;padding:0 28px 18px;font-size:10px;letter-spacing:1.5px}
+#main .agenda .agenda-column-headings span+span{padding-left:34px}
+#main .agenda .agenda-row{grid-template-columns:190px minmax(0,1fr);gap:0;padding:32px 28px;border-left:0;border-bottom:1px solid var(--border);margin:0;box-shadow:none}
+#main .agenda .agenda-time{display:flex;gap:6px;flex-wrap:wrap;align-content:flex-start;font-size:17px;line-height:1.8;font-weight:600;letter-spacing:0;color:var(--lavender);padding-top:2px}
+#main .agenda .agenda-time span{display:inline-flex;gap:6px;margin:0;font-size:17px;line-height:1.8;color:inherit;font-weight:500}
+#main .agenda .agenda-session{border-left:1px solid var(--border);padding-left:34px;min-width:0}
+#main .agenda .agenda-row h3{font-size:20px;font-weight:550;line-height:1.6;max-width:none}
+#main .agenda .agenda-row .micro{font-size:10px;letter-spacing:1px;margin-bottom:10px}
+#main .agenda .agenda-row p{font-size:13px;line-height:1.8;margin-top:12px}
+#main .agenda .agenda-row.featured{background:#7560b50d;border-left:0;padding-left:28px}
+#main .agenda .agenda-row.featured:before{display:none}
+#main .agenda .agenda-row.featured h3{color:#e0d2ff}
+#main .agenda .agenda-row.connection h3{font-size:19px}
+#main .agenda .agenda-note{font-size:12px;line-height:1.8;margin:24px 28px 0}
+
+/* The three approved audience cards, with the same hierarchy as NEXT. */
+#main .audience .section-heading{grid-template-columns:1fr .9fr;gap:70px}
+#main .audience .audience-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;border:0}
+#main .audience .audience-grid article{grid-column:auto;display:flex;padding:30px 28px 28px;border:1px solid var(--border);border-radius:10px}
+#main .audience .audience-card-heading{gap:13px;min-height:53px;padding-bottom:20px;align-items:center}
+#main .audience .audience-card-number{font-size:32px;letter-spacing:-1.5px}
+#main .audience .audience-grid .micro{font-size:9px;line-height:1.7;letter-spacing:.6px}
+#main .audience .audience-grid h3{font-size:25px;font-weight:550;line-height:1.45;letter-spacing:-.6px;margin-top:24px}
+#main .audience .audience-grid p{max-width:none;font-size:14px;line-height:1.9;margin:18px 0 28px}
+#main .audience .audience-tags{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(30px,auto));align-content:start;margin-top:auto;padding-top:20px;gap:8px}
+#main .audience .audience-tags li{display:flex;align-items:center;justify-content:center;min-width:0;min-height:30px;font-size:clamp(9px,.8vw,10px);line-height:1.6;white-space:nowrap;padding:5px 7px;border-radius:4px}
+
+/* All benefits are visible: four in a grid and one spanning its final row. */
+#main .takeaways .takeaway-layout{display:block}
+#main .takeaways .section-heading{grid-template-columns:1.1fr .9fr;align-items:end}
+#main .takeaways .section-heading h2{margin:0;max-width:680px}
+#main .takeaways .section-heading>p{margin:0;max-width:440px;font-size:15px}
+#main .takeaways .takeaway-content{display:grid;grid-template-columns:1.35fr .8fr;gap:60px;align-items:start}
+#main .takeaways .takeaway-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 34px;padding:0}
+#main .takeaways .takeaway-item{min-width:0;padding:0 0 28px;border-bottom:1px solid var(--border)}
+#main .takeaways .takeaway-item:last-child{grid-column:1/-1;display:grid;grid-template-columns:56px 1fr;column-gap:22px;align-items:start;border-bottom:0;padding-bottom:0}
+#main .takeaways .takeaway-icon{display:flex;align-items:center;justify-content:center;position:relative;width:52px;height:52px;border:1px solid #b3a5e64d;border-radius:50%;margin-bottom:21px;color:var(--lavender)}
+#main .takeaways .takeaway-icon svg{width:23px;height:23px;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+#main .takeaways .takeaway-icon span{position:absolute;left:42px;top:0;font-size:9px;letter-spacing:1px;color:var(--muted);background:#070d1e;padding:1px 4px}
+#main .takeaways .takeaway-item h3{font-size:22px;font-weight:550;line-height:1.45;letter-spacing:-.5px;margin:0 0 13px}
+#main .takeaways .takeaway-item p{max-width:none;font-size:14px;line-height:1.9;margin:0}
+#main .takeaways .takeaway-item:last-child .takeaway-icon{grid-row:1/3;margin:0}
+#main .takeaways .takeaway-item:last-child p{grid-column:2}
+#main .takeaways .takeaway-art{position:sticky;top:110px;align-self:start;margin:0;height:640px;max-height:75vh;border:0;border-radius:0;overflow:visible;background:none}
+#main .takeaways .takeaway-art:after{display:none}
+#main .takeaways .takeaway-art img{width:100%;height:100%;object-fit:cover;object-position:57% center;-webkit-mask-image:linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 65%,transparent);mask-image:linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent),linear-gradient(180deg,transparent,#000 12%,#000 65%,transparent);-webkit-mask-composite:source-in;mask-composite:intersect}
+#main .takeaways .takeaway-art figcaption{position:absolute;bottom:30px;left:30px;right:25px;z-index:1}
+#main .takeaways .takeaway-art .micro{font-size:8px;letter-spacing:1.2px}
+#main .takeaways .takeaway-art p{font-size:24px;line-height:1.6;color:var(--text);margin-top:16px;letter-spacing:-.5px}
+
+/* Organizer branding leads into four partner benefits, without invented logos. */
+#main .partners .organizer-row{display:grid;grid-template-columns:.55fr 1.45fr;align-items:center;gap:56px;margin:0 0 76px;padding:8px 0 34px;border-top:0;border-bottom:1px solid var(--border)}
+#main .partners .organizer-row>div:first-child{border-right:1px solid var(--border);padding-right:40px}
+#main .partners .organizer-row .micro{font-size:9px;letter-spacing:1.3px}
+#main .partners .organizer-row img{width:170px;height:auto;margin-top:22px}
+#main .partners .partner-announcement p{font-size:15px;line-height:1.85;margin-top:14px}
+#main .partners .section-heading{display:block;text-align:center;max-width:880px;margin:0 auto 48px}
+#main .partners .section-heading h2{max-width:880px}
+#main .partners .section-heading>p{max-width:720px;margin:24px auto 0;font-size:15px}
+#main .partners .partner-benefits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+#main .partners .partner-benefits article{padding:28px 24px 30px;border:1px solid var(--border);border-radius:10px;background:#111931;min-width:0}
+#main .partners .partner-card-top{display:flex;align-items:center;gap:12px;padding-bottom:20px;min-height:63px;border-bottom:1px solid var(--border)}
+#main .partners .partner-number{display:block;color:var(--lavender);font-size:32px;font-weight:600;line-height:1;letter-spacing:-1px}
+#main .partners .partner-benefits .micro{display:block;font-size:9px;letter-spacing:.65px;line-height:1.8}
+#main .partners .partner-benefits h3{font-size:21px;font-weight:550;letter-spacing:-.5px;line-height:1.5;margin-top:20px}
+#main .partners .partner-benefits p{font-size:13px;line-height:1.9;max-width:none;margin-top:16px}
+#main .partners .partner-action{display:flex;justify-content:center;margin-top:36px}
+#main .partners .partner-action .button{min-width:230px;min-height:52px;font-size:13px;border-radius:5px}
+#main .partners .partner-list:empty{display:none}
+
+/* A single truthful ticket panel until official prices are supplied. */
+#main .registration .registration-layout{grid-template-columns:1fr .9fr;gap:100px}
+#main .registration h2{margin-top:26px;font-size:clamp(38px,4.4vw,62px);line-height:1.2}
+#main .registration .registration-layout>div>p{font-size:16px;line-height:1.9;margin-top:26px;max-width:490px}
+#main .registration .registration-event{font-size:12px;gap:28px;margin-top:30px}
+#main .registration .registration-event span+span:before{left:-14px;top:6px}
+#main .registration .ticket-panel{padding:34px 36px 28px;border-radius:14px;box-shadow:none}
+#main .registration .ticket-panel:before,#main .registration .ticket-panel:after{display:none}
+#main .registration .ticket-heading{margin-bottom:28px}
+#main .registration .ticket-heading .micro{font-size:10px;letter-spacing:1.2px}
+#main .registration .ticket-panel h3{font-size:40px;font-weight:550;letter-spacing:-1.5px;margin-top:18px}
+#main .registration .ticket-panel>p{font-size:14px;line-height:1.9;margin-top:18px}
+#main .registration .ticket-panel p.ticket-location{font-size:15px;line-height:1.9;margin:23px 0 20px}
+#main .registration .ticket-location small{font-size:12px}
+#main .registration .ticket-rule{margin-top:28px}
+#main .registration .ticket-calendar{font-size:13px;min-height:48px;border:1px solid var(--border);border-radius:5px}
+#main .registration .ticket-panel .ticket-fineprint{font-size:11px;margin-top:14px}
+#main .faq-section .faq-layout{grid-template-columns:.8fr 1.2fr;gap:90px}
+#main .faq-section h2{font-size:40px;padding:0}
+#main .faq-section .faq-list summary{font-size:16px;font-weight:500;line-height:1.7;padding:24px 0;gap:20px}
+#main .faq-section .faq-list details>p{font-size:14px;line-height:1.9;padding:0 30px 24px 0}
+
+@media(max-width:1100px){
+  #main .content-section>.wrap{width:calc(100% - 72px)}
+  #main .content-section .section-heading{gap:40px}
+  #main .overview .overview-scene{gap:40px}
+  #main .overview .delegate-number{padding-right:28px}
+  #main .overview .delegate-number>span{font-size:142px;letter-spacing:-8px}
+  #main .overview .countdown-pending{margin-left:0}
+  #main .speakers .speaker-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  #main .speakers .speaker-count{display:block}
+  #main .speakers .speaker-draft-notice{flex-wrap:wrap}
+  #main .speakers .speaker-draft-notice p{flex:1;min-width:320px}
+  #main .topics .topic-grid{column-gap:36px}
+  #main .agenda .agenda-date strong{font-size:62px}
+  #main .agenda .agenda-row,#main .agenda .agenda-column-headings{grid-template-columns:165px minmax(0,1fr);padding-inline:20px}
+  #main .agenda .agenda-row.featured{padding-left:20px}
+  #main .agenda .agenda-session,#main .agenda .agenda-column-headings span+span{padding-left:26px}
+  #main .agenda .agenda-time,#main .agenda .agenda-time span{font-size:15px}
+  #main .audience .audience-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  #main .audience .audience-grid article{padding:25px 22px}
+  #main .audience .audience-grid h3{font-size:22px}
+  #main .takeaways .takeaway-content{gap:34px;grid-template-columns:1.4fr .8fr}
+  #main .takeaways .takeaway-list{column-gap:24px}
+  #main .takeaways .takeaway-art figcaption{left:22px;right:22px;bottom:24px}
+  #main .takeaways .takeaway-art p{font-size:20px}
+  #main .partners .partner-benefits{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  #main .partners .partner-benefits h3{font-size:23px}
+  #main .partners .partner-benefits .micro{min-height:0}
+  #main .registration .registration-layout{gap:50px}
+  #main .faq-section .faq-layout{gap:50px}
+}
+@media(max-width:850px){
+  #main .audience .section-heading,#main .takeaways .section-heading{grid-template-columns:1fr;gap:24px}
+  #main .audience .section-heading>p,#main .takeaways .section-heading>p{max-width:680px}
+  #main .audience .audience-grid{grid-template-columns:1fr}
+  #main .audience .audience-grid article{padding:30px}
+  #main .audience .audience-grid h3{font-size:25px}
+  #main .audience .audience-grid p{max-width:650px}
+  #main .audience .audience-tags li{font-size:10px}
+  #main .takeaways .takeaway-content{grid-template-columns:1fr}
+  #main .takeaways .takeaway-art{position:relative;top:auto;height:320px;max-height:none}
+  #main .takeaways .takeaway-art img{object-position:center 60%}
+  #main .takeaways .takeaway-art p{font-size:26px}
+  #main .registration .registration-layout{grid-template-columns:1fr;gap:36px}
+  #main .faq-section .faq-layout{grid-template-columns:1fr;gap:30px}
+}
+@media(max-width:720px){
+  #main .content-section{padding-block:70px}
+  #main .content-section>.wrap{width:calc(100% - 40px)}
+  #main .content-section h2{font-size:34px;line-height:1.28;letter-spacing:-1.2px}
+  #main .content-section .section-top{margin-bottom:27px;gap:16px}
+  #main .content-section .section-top .eyebrow{font-size:8px;letter-spacing:1.1px}
+  #main .content-section .section-top>.micro{display:none}
+  #main .content-section .section-heading{display:block;margin-bottom:34px}
+  #main .content-section .section-heading>p{font-size:14px;line-height:1.9;margin-top:22px}
+  #main .overview .overview-scene{grid-template-columns:minmax(0,1fr);gap:30px;padding:0}
+  #main .overview .delegate-number{padding:0 0 28px;border-right:0;border-bottom:1px solid var(--border)}
+  #main .overview .delegate-number>span{font-size:clamp(110px,36vw,140px);letter-spacing:-8px}
+  #main .overview .delegate-number h2{font-size:16px;letter-spacing:4px;margin-top:15px}
+  #main .overview .delegate-number p{font-size:13px;margin-top:20px}
+  #main .overview .overview-copy>p{font-size:21px;line-height:1.75;letter-spacing:-.4px}
+  #main .overview .inline-actions{margin-top:24px;display:grid;grid-template-columns:1fr;gap:12px}
+  #main .overview .inline-actions .button{width:100%;min-width:0}
+  #main .overview .countdown-bar{gap:22px;padding:24px 0}
+  #main .overview .countdown-heading{min-width:0;width:100%;flex-basis:100%}
+  #main .overview .countdown-heading .micro{font-size:9px}
+  #main .overview .countdown-heading p{font-size:12px}
+  #main .overview .calendar-link{width:100%;border-left:0;border-top:1px solid var(--border);padding:18px 0 0;justify-content:space-between}
+  #main .speakers .speaker-list{grid-template-columns:1fr;gap:26px}
+  #main .speakers .speaker-draft-notice{align-items:flex-start;gap:13px;flex-direction:column;padding:18px 0;margin-bottom:28px}
+  #main .speakers .speaker-draft-notice p{min-width:0;font-size:12px;flex:auto}
+  #main .speakers .speaker-count{font-size:11px;margin-left:0}
+  #main .speakers .speaker-portrait{aspect-ratio:1.2/1}
+  #main .speakers .speaker-copy{padding:25px 24px}
+  #main .speakers .speaker-card h3{font-size:25px}
+  #main .speakers .speaker-bio{font-size:13px}
+  #main .topics .topic-grid{grid-template-columns:1fr;gap:0}
+  #main .topics .topic-card{padding:29px 0}
+  #main .topics .topic-number{font-size:40px;margin-bottom:22px}
+  #main .topics .topic-card h3{font-size:25px}
+  #main .topics .topic-card p{font-size:14px;margin-bottom:24px}
+  #main .agenda .agenda-intro{flex-direction:column;align-items:flex-start;gap:28px;margin-bottom:32px}
+  #main .agenda .agenda-intro h2{margin-top:22px}
+  #main .agenda .agenda-date strong{font-size:56px}
+  #main .agenda .agenda-date span{font-size:10px}
+  #main .agenda .agenda-toolbar{gap:14px;flex-wrap:wrap;margin-bottom:20px}
+  #main .agenda .agenda-toolbar .small-tag{font-size:8px}
+  #main .agenda .calendar-text{font-size:11px}
+  #main .agenda .agenda-filters{gap:28px;margin-bottom:8px}
+  #main .agenda .agenda-filters button{flex:none;padding:13px 0 14px;font-size:12px}
+  #main .agenda .agenda-column-headings{display:none}
+  #main .agenda .agenda-row{grid-template-columns:1fr;gap:13px;padding:25px 0}
+  #main .agenda .agenda-row.featured{padding:25px 14px;margin-inline:-14px;border-left:0}
+  #main .agenda .agenda-time,#main .agenda .agenda-time span{font-size:14px;line-height:1.6;gap:6px}
+  #main .agenda .agenda-session{border:0;padding:0}
+  #main .agenda .agenda-row h3,#main .agenda .agenda-row.connection h3{font-size:17px;font-weight:550;line-height:1.65}
+  #main .agenda .agenda-row .micro{font-size:9px;margin-bottom:8px}
+  #main .agenda .agenda-row p{font-size:12px;margin-top:10px}
+  #main .agenda .agenda-note{margin:22px 0 0;font-size:11px}
+  #main .audience .audience-grid{gap:20px}
+  #main .audience .audience-grid article{padding:27px 24px}
+  #main .audience .audience-card-heading{min-height:0}
+  #main .audience .audience-card-number{font-size:30px}
+  #main .audience .audience-grid h3{font-size:25px;margin-top:22px}
+  #main .audience .audience-grid p{font-size:14px;margin:17px 0 25px}
+  #main .takeaways .takeaway-list{grid-template-columns:1fr;gap:28px}
+  #main .takeaways .takeaway-item{padding-bottom:28px}
+  #main .takeaways .takeaway-item:last-child{display:block;grid-column:auto}
+  #main .takeaways .takeaway-item:last-child .takeaway-icon{margin-bottom:21px}
+  #main .takeaways .takeaway-item h3{font-size:23px}
+  #main .takeaways .takeaway-item p{font-size:14px}
+  #main .takeaways .takeaway-art{height:330px}
+  #main .takeaways .takeaway-art p{font-size:24px}
+  #main .partners .organizer-row{grid-template-columns:1fr;gap:28px;margin-bottom:52px;padding:0 0 30px}
+  #main .partners .organizer-row>div:first-child{border:0;padding:0}
+  #main .partners .organizer-row img{width:150px;margin-top:20px}
+  #main .partners .partner-announcement p{font-size:14px}
+  #main .partners .section-heading{text-align:left;margin-bottom:34px}
+  #main .partners .section-heading>p{margin-top:22px}
+  #main .partners .partner-benefits{grid-template-columns:1fr;gap:20px}
+  #main .partners .partner-benefits article{padding:28px 25px}
+  #main .partners .partner-benefits h3{font-size:24px}
+  #main .partners .partner-benefits p{font-size:14px}
+  #main .partners .partner-action{margin-top:28px}
+  #main .partners .partner-action .button{width:100%}
+  #main .registration .registration-layout{grid-template-columns:1fr;gap:36px}
+  #main .registration h2{font-size:40px}
+  #main .registration .registration-layout>div>p{font-size:14px;margin-top:23px}
+  #main .registration .registration-event{font-size:11px;gap:22px;margin-top:25px}
+  #main .registration .registration-event span+span:before{left:-11px}
+  #main .registration .ticket-panel{padding:28px 24px}
+  #main .registration .ticket-panel h3{font-size:34px}
+  #main .registration .ticket-panel>p{font-size:13px}
+  #main .registration .ticket-heading .micro{font-size:9px}
+  #main .registration .ticket-calendar{font-size:12px}
+  #main .faq-section .faq-layout{grid-template-columns:1fr;gap:30px}
+  #main .faq-section h2{font-size:34px}
+  #main .faq-section h2 br{display:initial}
+  #main .faq-section .faq-list summary{font-size:15px;padding:22px 0}
+  #main .faq-section .faq-list details>p{font-size:13px;padding-right:22px}
+}
+@media(max-width:370px){
+  #main .content-section h2{font-size:31px}
+  #main .speakers .speaker-copy{padding:23px 21px}
+  #main .speakers .speaker-card h3{font-size:23px}
+  #main .audience .audience-grid article{padding:25px 21px}
+  #main .audience .audience-grid h3{font-size:23px}
+  #main .registration .ticket-panel{padding:26px 21px}
+  #main .registration .ticket-panel h3{font-size:31px}
+}
+@media(prefers-reduced-motion:reduce){#main .speakers .speaker-card{transition:none}}
+
+/* Airy sans typography informed by the Drive artwork, with readable web sizes. */
+.site-header .main-nav a{font-size:13px}
+#main .content-section h2{font-weight:500;letter-spacing:-.6px}
+#main .content-section .section-top .eyebrow,#main .content-section .section-top>.micro{font-size:11px}
+#main .content-section .section-heading>p{font-size:16px}
+#main .content-section .text-link{font-size:14px}
+#main .overview .delegate-number p{font-size:16px}
+#main .overview .inline-actions .button{font-size:15px}
+#main .overview .countdown-heading p{font-size:14px}
+#main .overview .countdown-heading .micro,#main .overview .countdown-pending .small-tag{font-size:11px}
+#main .overview .calendar-link{font-size:14px}
+#main .speakers .speaker-card h3{font-size:26px;font-weight:550;letter-spacing:-.3px}
+#main .speakers .speaker-title,#main .speakers .speaker-organization,#main .speakers .speaker-bio{font-size:15px}
+#main .speakers .speaker-role{font-size:12px}
+#main .speakers .speaker-card button{font-size:14px}
+#main .speakers .speaker-draft-notice p{font-size:14px}
+#main .speakers .speaker-draft-notice .small-tag{font-size:11px}
+#main .speakers .speaker-count{font-size:13px}
+#main .topics .topic-card>.micro{font-size:11px}
+#main .topics .topic-card h3{font-size:28px;font-weight:500;letter-spacing:-.3px}
+#main .topics .topic-card p{font-size:16px}
+#main .topics .card-foot{font-size:14px}
+#main .agenda .agenda-time,#main .agenda .agenda-time span{font-size:18px}
+#main .agenda .agenda-row h3{font-size:21px;font-weight:500}
+#main .agenda .agenda-row.connection h3{font-size:20px}
+#main .agenda .agenda-row .micro{font-size:12px}
+#main .agenda .agenda-row p{font-size:15px}
+#main .agenda .agenda-note{font-size:14px}
+#main .agenda .agenda-filters button,#main .agenda .calendar-text{font-size:14px}
+#main .agenda .agenda-toolbar .small-tag,#main .agenda .agenda-column-headings{font-size:11px}
+#main .agenda .agenda-date span{font-size:12px}
+#main .audience .audience-grid h3{font-size:27px;font-weight:500;letter-spacing:-.3px}
+#main .audience .audience-grid p{font-size:16px}
+#main .audience .audience-grid .micro{font-size:11px}
+#main .audience .audience-tags li{font-size:12px;padding:4px 7px}
+#main .takeaways .takeaway-item h3{font-size:24px;font-weight:500;letter-spacing:-.3px}
+#main .takeaways .takeaway-item p{font-size:16px}
+#main .takeaways .takeaway-art .micro{font-size:10px}
+#main .takeaways .takeaway-art p{font-size:26px}
+#main .partners .organizer-row .micro{font-size:11px}
+#main .partners .partner-announcement p{font-size:16px}
+#main .partners .partner-benefits .micro{font-size:11px}
+#main .partners .partner-card-top{min-height:80px}
+#main .partners .partner-benefits h3{font-size:23px;font-weight:500;letter-spacing:-.3px}
+#main .partners .partner-benefits p{font-size:15px}
+#main .partners .partner-action .button{font-size:15px}
+#main .registration .registration-layout>div>p{font-size:17px}
+#main .registration .registration-event{font-size:13px}
+#main .registration .ticket-heading .micro{font-size:11px}
+#main .registration .ticket-panel>p{font-size:16px}
+#main .registration .ticket-panel p.ticket-location{font-size:16px}
+#main .registration .ticket-location small{font-size:14px}
+#main .registration .ticket-calendar{font-size:15px}
+#main .registration .ticket-panel .ticket-fineprint{font-size:13px}
+#main .faq-section .faq-list summary{font-size:18px}
+#main .faq-section .faq-list details>p{font-size:16px}
+.footer-main p{font-size:11px}
+.footer-main>.text-link{font-size:13px}
+.footer-bottom,.footer-bottom>span:last-child{font-size:10px}
+#info-dialog .eyebrow{font-size:11px}
+#info-dialog #dialog-description{font-size:15px}
+#info-dialog .dialog-speaker-copy dt{font-size:11px}
+#info-dialog .dialog-speaker-copy dd,#info-dialog .dialog-speaker-copy p{font-size:15px}
+#info-dialog .dialog-speaker-copy h3{font-size:15px}
+#info-dialog .dialog-event{font-size:15px}
+#info-dialog .dialog-event span,#info-dialog .dialog-dismiss{font-size:13px}
+#info-dialog .button{font-size:14px}
+@media(max-width:1000px){
+  #main .audience .section-heading{grid-template-columns:1fr;gap:24px}
+  #main .audience .audience-grid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .site-header .main-nav a{font-size:15px}
+  #main .content-section .section-top .eyebrow{font-size:10px}
+  #main .topics .topic-card h3{font-size:26px}
+  #main .agenda .agenda-row h3,#main .agenda .agenda-row.connection h3{font-size:18px}
+  #main .agenda .agenda-time,#main .agenda .agenda-time span{font-size:16px}
+  #main .agenda .agenda-row p{font-size:14px}
+  #main .agenda .agenda-filters button,#main .agenda .calendar-text{font-size:13px}
+  #main .agenda .agenda-row .micro,#main .agenda .agenda-toolbar .small-tag{font-size:11px}
+  #main .audience .audience-grid h3{font-size:26px}
+  #main .partners .partner-card-top{min-height:64px}
+  #main .registration .registration-layout>div>p{font-size:16px}
+  #main .registration .registration-event{font-size:12px}
+  .footer-main p{font-size:10px}
+}
+
+/* Compact information spread: title and answers share the full section width. */
+#main .faq-section{padding-block:72px 64px}
+#main .faq-section .faq-layout{display:block}
+#main .faq-section .faq-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:32px}
+#main .faq-section .faq-heading .eyebrow{display:block;font-size:11px;letter-spacing:1.6px;color:var(--lavender);margin-bottom:12px}
+#main .faq-section .faq-heading h2{font-size:clamp(30px,3vw,40px);line-height:1.3;letter-spacing:-.9px;padding:0;text-wrap:balance}
+#main .faq-section .faq-heading>p{max-width:290px;margin:0 0 3px;font-size:15px;line-height:1.8}
+#main .faq-section .faq-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:64px}
+#main .faq-section .faq-item{display:grid;grid-template-columns:26px minmax(0,1fr);align-content:start;gap:16px;padding:26px 0 28px;border-top:1px solid var(--border)}
+#main .faq-section .faq-index{font-size:12px;line-height:1.7;color:var(--lavender);font-variant-numeric:tabular-nums;padding-top:3px;opacity:.8}
+#main .faq-section .faq-item h3{font-size:20px;font-weight:550;line-height:1.6;letter-spacing:-.2px;color:var(--text)}
+#main .faq-section .faq-item p{font-size:15px;line-height:1.85;margin-top:11px;color:var(--muted)}
+@media(max-width:1000px){
+  #main .faq-section .faq-list{column-gap:36px}
+  #main .faq-section .faq-item{grid-template-columns:22px minmax(0,1fr);gap:12px}
+  #main .faq-section .faq-item h3{font-size:19px}
+}
+@media(max-width:720px){
+  #main .faq-section{padding-block:48px 40px}
+  #main .faq-section .faq-heading{display:block;margin-bottom:26px}
+  #main .faq-section .faq-heading h2{font-size:31px}
+  #main .faq-section .faq-heading>p{max-width:360px;font-size:15px;margin-top:14px}
+  #main .faq-section .faq-list{grid-template-columns:minmax(0,1fr)}
+  #main .faq-section .faq-item{padding:23px 0 25px}
+  #main .faq-section .faq-item h3{font-size:19px}
+  #main .faq-section .faq-item p{font-size:15px;line-height:1.85;margin-top:10px}
+}
